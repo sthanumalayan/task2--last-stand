@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="mover" ></canvas>
+    <div id="timer">
+        60
+    </div>
+    <div id="start"><button id="startbutton">START GAME</button></div>
+    <div id="wave">WAVE 1</div>
+    <div id="rules">
+        <p>
+            TOTAL:3 WAVES<br><br>
+            TIME:60 SEC PER WAVE<br><br>
+            YOU DIE IF 6 ZOMBIES HIT YOU<br><br>
+            SURVIVE TILL END TO WIN
+        </p>
+    </div>
+    <div id="instructions">
+        <p>
+            USE <i>W A S D</i> TO MOVE PLAYER(YOU CAN'T GO ABOVE ZOMBIE'S HEIGHT)<br><br>
+            MOVE CURSOR TO A ZOMBIE AND CLICK TO SHOOT<br><br>
+            PLACE OBSTACLES BY CLICKING AND SLIDING THEM ON THE GROUND
+        </p>
+    </div>
+    <button id="obstacle">OBSTACLE</button>
+    <button id="pause">PAUSE</button>
+    <div id="gameover">
+        OOPS! YOU LOSE<br>
+        <button id="playagain">PLAY AGAIN</button>
+    </div>
+    <canvas id="canvas"  width="1500px" height="500px"></canvas>
+    <div>
+        <img src="images/bat.webp" id="bat1">
+        <img src="images/bat.webp" id="bat2">
+        <img src="images/bat.webp" id="bat3">
+        <img src="images/bat.webp" id="bat4">
+        <img src="images/bat.webp" id="bat5">
+        <img src="images/moon.png" id="moon">
+        <img src="images/tree.png" id="tree">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
