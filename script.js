@@ -507,23 +507,6 @@ function move_player(event){
             break;
     }
     pl.draw_player(c, count);
-    // //start point
-    // c.beginPath();
-    // c.arc(135+move_tracker.x, 50+move_tracker.y, 5, 0, Math.PI * 2);
-    // c.fillStyle = 'black';
-    // c.fill();
-    // //curved line
-    // c.beginPath();
-    // c.moveTo(135+move_tracker.x, 50+move_tracker.y);
-    // c.quadraticCurveTo(((135+(x/4))/ 2)+move_tracker.x  , 40+move_tracker.y, (x/4)+move_tracker.x, (y/4)+move_tracker.y);
-    // c.strokeStyle = 'blue';
-    // c.lineWidth = 2;
-    // c.stroke();
-    // //end point
-    // c.beginPath();
-    // c.arc((x/4)+move_tracker.x, (y/4)+move_tracker.y, 5, 0, Math.PI * 2);
-    // c.fillStyle = 'black';
-    // c.fill();
     let m=x/4;
     let n=y/4;
     //start point
