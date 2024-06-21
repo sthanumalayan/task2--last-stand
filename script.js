@@ -221,7 +221,7 @@ function hit(z,p,q){
         }
     }
     else if(z.position=="right"){
-        if(((140+((z.x-550)/4))-5<=p && (140+((z.x-550)/4))+15>=p) &&flag ){
+        if(((140+((z.x-550)/4))-10<=p && (140+((z.x-550)/4))+15>=p) &&flag ){
             return true;
         }
     }
