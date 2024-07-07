@@ -295,7 +295,7 @@ async function move_zombie(z){
             obstacles.forEach(obs=>obs.draw(ctx));
             await delay(500);
             if(pause_flag)break;
-            if(z.position=="left" && ((10+(z.x)/4)-15<=pl.x+180 && ((10+(z.x)/4))+15>=pl.x+180)){
+            if(z.position=="left" && ((10+(z.x)/4)-15<=pl.x+120 && ((10+(z.x)/4))+15>=pl.x+120)){
                 function check(zombie){
                     return zombie!=z;
                 }
@@ -306,7 +306,7 @@ async function move_zombie(z){
                 pl.draw_player(c,count);
                 break;
             }
-            if(z.position=="right"&&((140+((z.x-1200)/4))-15<=pl.x+90 && (140+((z.x-1200)/4))+15>=pl.x+90)){
+            if(z.position=="right"&&((140+((z.x-1200)/4))-15<=pl.x+120 && (140+((z.x-1200)/4))+15>=pl.x+120)){
                 function check(zombie){
                     return zombie!=z;
                 }
