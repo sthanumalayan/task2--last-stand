@@ -216,12 +216,12 @@ function hit(z,p,q){
         if(q>=80 &&q<=120)flag=true;  //exact were 88 117 
     }
     if(z.position=="left"){
-        if((canvas.width/100+(z.x)/4)-(canvas.width)/300<=p && (canvas.width/100+(z.x)/4)+canvas.width/100>=p && flag){
+        if((canvas.width/100+(z.x)/4)-5<=p && (canvas.width/100+(z.x)/4)+15>=p && flag){
             return true;
         }
     }
     else if(z.position=="right"){
-        if((((canvas.width/10)+((z.x-(canvas.width/3))/4))-10<=p && ((canvas.width/10)+((z.x-(canvas.width/3))/4))+15>=p) &&flag ){
+        if(((canvas.width/10)+(z.x-550)/4)-10<=p && (((canvas.width/10)+(z.x-550)/4)+15>=p) &&flag ){
             return true;
         }
     }
