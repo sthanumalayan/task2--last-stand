@@ -218,12 +218,12 @@ function hit(z,p,q){
     }
     
     if(z.position=="left"){
-        if((10+(z.x)/4)-5<=p && (10+(z.x)/4)+15>=p && flag){
+        if((10+(z.x)/4)-10<=p && (10+(z.x)/4)+25>=p && flag){
             return true;
         }
     }
     else if(z.position=="right"){
-        if(((140+(z.x-850)/4)-10<=p) && (140+(z.x-850)/4)+15>=p &&flag ){
+        if(((140+(z.x-850)/4)-20<=p) && (140+(z.x-850)/4)+15>=p &&flag ){
             return true;
         }
     }
