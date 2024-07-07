@@ -218,12 +218,12 @@ function hit(z,p,q){
     }
     
     if(z.position=="left"){
-        if((10+(z.x)/4)-10<=p && (10+(z.x)/4)+25>=p && flag){
+        if((10+(z.x)/4)-40<=p && (10+(z.x)/4)+40>=p && flag){
             return true;
         }
     }
     else if(z.position=="right"){
-        if(((140+(z.x-850)/4)-20<=p) && (140+(z.x-850)/4)+15>=p &&flag ){
+        if(((140+(z.x-850)/4)-40<=p) && (140+(z.x-850)/4)+40>=p &&flag ){
             return true;
         }
     }
@@ -295,7 +295,7 @@ async function move_zombie(z){
             obstacles.forEach(obs=>obs.draw(ctx));
             await delay(500);
             if(pause_flag)break;
-            if(z.position=="left" && ((10+(z.x)/4)-5<=pl.x+120 && ((10+(z.x)/4))+15>=pl.x+120)){
+            if(z.position=="left" && ((10+(z.x)/4)-40<=pl.x+120 && ((10+(z.x)/4))+40>=pl.x+120)){
                 function check(zombie){
                     return zombie!=z;
                 }
@@ -306,7 +306,7 @@ async function move_zombie(z){
                 pl.draw_player(c,count);
                 break;
             }
-            if(z.position=="right"&&((140+((z.x-550)/4))-35<=pl.x+120 && (140+((z.x-550)/4))-10>=pl.x+120)){
+            if(z.position=="right"&&((140+((z.x-1200)/4))-40<=pl.x+120 && (140+((z.x-1200)/4))+40>=pl.x+120)){
                 function check(zombie){
                     return zombie!=z;
                 }
