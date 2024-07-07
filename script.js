@@ -218,9 +218,9 @@ function hit(z,p,q){
     }
     var zombieX;
     if (z.position == "left") {
-        zombieX = (canvas.width/100 + (z.x) / 4);
+        zombieX =25+ ((z.x) / 4);
     } else if (z.position == "right") {
-        zombieX = (canvas.width /100 + (z.x - 550) / 4);
+        zombieX = ((z.x - 650) / 4);
     }
     
     // Check if the bullet's x position (p) is within the zombie's x range
