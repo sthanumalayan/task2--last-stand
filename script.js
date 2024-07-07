@@ -207,6 +207,7 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 function hit(z,p,q){
+    console.log(z.x,p);
     //comparing positions of bullet and zombie
     var flag=false;
     if(z.y==100){
