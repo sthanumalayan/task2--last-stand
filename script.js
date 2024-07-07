@@ -115,7 +115,7 @@ class Zombie{
         if(this.position=="left" && this.x<700){
             this.x+=speed;
         }
-        else if (this.position=="right" && this.x>950){
+        else if (this.position=="right" && this.x>800){
             this.x-=speed;
         }
     }
@@ -295,7 +295,7 @@ async function move_zombie(z){
             obstacles.forEach(obs=>obs.draw(ctx));
             await delay(500);
             if(pause_flag)break;
-            if(z.position=="left" && ((10+(z.x)/4)-15<=pl.x+120 && ((10+(z.x)/4))+15>=pl.x+120)){
+            if(z.position=="left" && ((10+(z.x)/4)-15<=pl.x+180 && ((10+(z.x)/4))+15>=pl.x+180)){
                 function check(zombie){
                     return zombie!=z;
                 }
