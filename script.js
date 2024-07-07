@@ -112,10 +112,10 @@ class Zombie{
         ctx.fillRect(this.x+55,this.y+10,40-(20*this.count),5);
     }
     move(speed){
-        if(this.position=="left" && this.x<900){
+        if(this.position=="left" && this.x<700){
             this.x+=speed;
         }
-        else if (this.position=="right" && this.x>900){
+        else if (this.position=="right" && this.x>950){
             this.x-=speed;
         }
     }
@@ -306,7 +306,7 @@ async function move_zombie(z){
                 pl.draw_player(c,count);
                 break;
             }
-            if(z.position=="right"&&((140+((z.x-1200)/4))-15<=pl.x+120 && (140+((z.x-1200)/4))+15>=pl.x+120)){
+            if(z.position=="right"&&((140+((z.x-1200)/4))-15<=pl.x && (140+((z.x-1200)/4))+15>=pl.x)){
                 function check(zombie){
                     return zombie!=z;
                 }
