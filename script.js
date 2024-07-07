@@ -295,7 +295,7 @@ async function move_zombie(z){
             obstacles.forEach(obs=>obs.draw(ctx));
             await delay(500);
             if(pause_flag)break;
-            if(z.position=="left" && ((10+(z.x)/4)-15<=pl.x+120 && ((10+(z.x)/4))+15>=pl.x+120)){
+            if(z.position=="left" && ((10+(z.x)/4)-15<=pl.x+135 && ((10+(z.x)/4))+15>=pl.x+135)){
                 function check(zombie){
                     return zombie!=z;
                 }
