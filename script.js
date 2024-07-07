@@ -112,10 +112,10 @@ class Zombie{
         ctx.fillRect(this.x+55,this.y+10,40-(20*this.count),5);
     }
     move(speed){
-        if(this.position=="left" && this.x<500){
+        if(this.position=="left" && this.x<900){
             this.x+=speed;
         }
-        else if (this.position=="right" && this.x>500){
+        else if (this.position=="right" && this.x>900){
             this.x-=speed;
         }
     }
